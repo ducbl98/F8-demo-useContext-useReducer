@@ -1,0 +1,11 @@
+import { useContext } from 'react';
+import {ThemeContext} from './ThemeContext'
+
+function Paragraph(){
+  const context = useContext(ThemeContext);
+  return (
+    <h1 className={context.theme}>I am Iron Man</h1>
+  )
+}
+
+export default Paragraph;
